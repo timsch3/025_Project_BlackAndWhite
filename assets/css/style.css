@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Maison;
+    src: url(../fonts/maison-neue-mono.woff2);
+}
+@font-face {
+    font-family: RZ;
+    src: url(../fonts/rz-regular.woff2);
+}
+
+/* CSS Reset & general styling*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: RZ;
+    font-weight: 400;
+}
+
+/* ==================== Navigation */
+nav {
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 3vw;
+}
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+nav p {
+    padding-left: 9vw;
+}
+nav ul {
+    padding-right: 6vw;
+}
+
+/* ==================== Top section */
+#top h1 {
+    font-size: 7.5em;
+    padding: 17vh 0 0 9vw;
+    line-height: 0.99;
+}
+#top h1 span {
+    color: #fff;
+    -webkit-text-stroke: 3px #000;
+}
+/* ---------- Images behind text */
+#top img {
+    position: absolute;
+    z-index: -1;
+}
+#top img:first-of-type {
+    top: 56vh;
+    max-width: 24vw;
+}
+#top img:nth-of-type(2) {
+    top: 72vh;
+    left: 41vw;
+    max-width: 19.5vw;
+}
+#top img:last-of-type {
+    top: 44vh;
+    right: 0;
+    max-width: 22vw;
+}
